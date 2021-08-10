@@ -1,0 +1,28 @@
+.navbar {
+    background: none;
+ }
+  .color-hr{
+    background-color: #00a1ad;
+}
+
+body{
+    background-color: black !important; 
+}
+
+footer i{
+display: inline-block;
+
+}
+.iconos{
+    padding: 8.12rem;
+}
+.padding-container{
+    padding:12rem;
+}
+
+/* responsive xs */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .margen{
+      margin-top: 24px;
+  }
+}
