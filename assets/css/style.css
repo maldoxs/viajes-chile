@@ -29,6 +29,9 @@ display: inline-block;
   .margen{
       margin-top: 24px;
   }
+  .texto{
+      text-align: center;
+  }
 }
 
 .size-image{

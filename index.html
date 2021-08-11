@@ -13,21 +13,37 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <style>
+    .active {
+      background: #15A3B8;
+    }
+/* clases que cambian el color del tooltip */
+.tooltip-inner {
+    background-color: #15A3B8!important;
+}
+
+.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #15A3B8!important;
+}
+  </style>
 </head>
+
+
 
 <body class="text-light">
 
-  <nav class="navbar navbar-expand-lg fixed-top ">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand titulo text-light" href="#"><img src="assets/img/viajes.svg" alt="imagen-logo"
-          class="size-image"> Viajes Chile </a>
+          class="size-image" > Viajes Chile </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto ">
-          <a class="nav-item nav-link text-light active" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link text-light color-texto active" href="#carouselExampleControls">Inicio <span
+              class="sr-only">(current)</span></a>
           <a class="nav-item nav-link text-light color-texto" href="#quienes-somos">Quienes Somos</a>
           <a class="nav-item nav-link text-light color-texto" href="#destacados">Destacados</a>
           <a class="nav-item nav-link text-light color-texto" href="#contacto">Contacto</a>
@@ -81,6 +97,9 @@
             similique excepturi obcaecati maxime fuga doloribus aliquid pariatur optio qui ipsum
             sit? Dolorum maiores praesentium corporis. Quidem fugiat, sit enim fugit temporibus
             facilis excepturi eligendi odio aspernatur quia ea ab ducimus totam. Fugiat, modi.</p>
+
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click para añadir a favoritos"
+            class="btn btn-info">Añadir a favoritos</a>
         </div>
 
         <div class="col-md-4 mb-sm-4">
@@ -95,8 +114,9 @@
             voluptatibus molestiae blanditiis amet, praesentium aspernatur!</p>
 
           <div class="text-center font-weight-4 bg-info py-1">
-            <i class="fas fa-plane fa-2x"></i>
+            <i class="fas fa-mountain fa-2x"></i>
           </div>
+         
         </div>
 
         <div class="col-md-4">
@@ -115,6 +135,8 @@
             non sequi culpa iure labore fugiat vitae neque voluptatum corrupti magni ipsum
             voluptates dolorem natus expedita perspiciatis. Quidem corporis ducimus quae?</p>
 
+            <a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Click para añadir a favoritos"
+            class="btn btn-info mt-3">Añadir a favoritos</a>
         </div>
       </div>
     </div>
@@ -208,16 +230,18 @@
   <footer class="bg-info fa-2x">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-8 text-sm-center text-md-left">VIAJES CHILE</div>
-        <div class="col-sm-12 col-md-4 text-sm-center ">
-          <i class="fab fa-github-square"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-facebook-square"></i>
+        <div class="col-sm-12 col-md-8 text-sm-center text-md-left texto">VIAJES CHILE</div>
+        <div class="col-sm-12 col-md-4 text-sm-center texto ">
+          <a href="https://github.com/"><i class="fab fa-github-square text-light"></i></a>
+          <a href="https://cl.linkedin.com/"><i class="fab fa-linkedin text-light"></i></a>
+          <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square text-light"></i></a>
+          <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-square text-light"></i></a>
         </div>
       </div>
     </div>
   </footer>
+
+
 
   <script src="https://kit.fontawesome.com/22ae6d249f.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -227,7 +251,7 @@
 
   </script>
 
-  <script src="/assets/js/javascript.js"></script>
+  <script src="/assets/js/script.js"></script>
 
 </body>
 
