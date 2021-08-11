@@ -1,3 +1,7 @@
+body{
+    font-family: 'Roboto', sans-serif!important;
+}
+
 .navbar {
     background: none;
  }
@@ -29,4 +33,11 @@ display: inline-block;
 
 .size-image{
     width: 1.5rem;
+}
+.color-texto{
+color: #cbd3da!important;
+}
+
+a.nav-item.nav-link.text-light.color-texto {
+    color: #cbd3da!important
 }
