@@ -28,10 +28,33 @@ display: inline-block;
 @media screen and (min-width: 1px) and (max-width: 767px) {
   .margen{
       margin-top: 24px;
+      padding: 5px;
   }
   .texto{
       text-align: center;
+      padding: 5px;
   }
+}
+
+/* responsive xs */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .color-fondo{
+      background-color: black;
+  }
+  a.nav-item.nav-link.text-light.color-texto {
+    color: #cbd3da!important;
+    padding: 11px;
+}
+}
+/* responsive sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+.color-fondo{
+      background-color: black;
+  }
+  a.nav-item.nav-link.text-light.color-texto {
+    color: #cbd3da!important;
+    padding: 11px;
+}
 }
 
 .size-image{
